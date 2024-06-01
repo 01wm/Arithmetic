@@ -23,4 +23,41 @@ func main() {
 
 	// 两数之和
 	fmt.Println(likou.TwoSum([]int{2, 7, 11, 15}, 9))
+
+	// 两数相加
+	l1 := &likou.ListNode{
+		Val: 9,
+		Next: &likou.ListNode{
+			Val: 9,
+			Next: &likou.ListNode{
+				Val: 9,
+				Next: &likou.ListNode{
+					Val: 9,
+					Next: &likou.ListNode{
+						Val: 9,
+						Next: &likou.ListNode{
+							Val: 9,
+							Next: &likou.ListNode{
+								Val: 9,
+							},
+						},
+					},
+				},
+			},
+		},
+	}
+	l2 := &likou.ListNode{
+		Val: 9,
+		Next: &likou.ListNode{
+			Val: 9,
+			Next: &likou.ListNode{
+				Val: 9,
+				Next: &likou.ListNode{
+					Val: 9,
+				},
+			},
+		},
+	}
+	req := likou.AddTwoNumbers(l1, l2)
+	fmt.Println(req)
 }
