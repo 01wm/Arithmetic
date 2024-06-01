@@ -60,4 +60,7 @@ func main() {
 	}
 	req := likou.AddTwoNumbers(l1, l2)
 	fmt.Println(req)
+
+	// 无重复字符最长子串
+	fmt.Println(likou.LengthOfLongestSubstring("ajdadjkbncl"))
 }
