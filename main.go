@@ -20,4 +20,7 @@ func main() {
 	str := "abba"
 	longestPal := likou.LongestPalindrome(str)
 	fmt.Println("Longest palindrome substring:", longestPal)
+
+	// 两数之和
+	fmt.Println(likou.TwoSum([]int{2, 7, 11, 15}, 9))
 }
