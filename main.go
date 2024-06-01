@@ -15,4 +15,9 @@ func main() {
 	nums2 := []int{4, 5, 6, 7}
 	index := likou.FindMedianSortedArrays(nums1, nums2)
 	fmt.Println(index)
+
+	// 最长回文子串
+	str := "abba"
+	longestPal := likou.LongestPalindrome(str)
+	fmt.Println("Longest palindrome substring:", longestPal)
 }
