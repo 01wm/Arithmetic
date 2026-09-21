@@ -69,6 +69,7 @@ type ListNode struct {
 //	return rel
 //}
 
+// 两数相加
 func AddTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	suns := func(l *ListNode) int64 {
 		var (

@@ -3,6 +3,7 @@ package main
 import (
 	"01wm/likou"
 	"fmt"
+	"log"
 )
 
 func main() {
@@ -63,4 +64,16 @@ func main() {
 
 	// 无重复字符最长子串
 	fmt.Println(likou.LengthOfLongestSubstring("ajdadjkbncl"))
+
+	// 分块校验
+	filename := "example.txt" // 要计算校验和的文件名
+	hashes, err := likou.ComputeBlockHashes(filename)
+	if err != nil {
+		log.Fatalf("Failed to compute block hashes: %v", err)
+	}
+	fmt.Println("Block Hashes:")
+	for _, hash := range hashes {
+		fmt.Println(hash)
+	}
+
 }
